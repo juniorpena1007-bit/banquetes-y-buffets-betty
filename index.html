@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Betty · Banquetes y Buffets</title>
+<meta name="description" content="Banquetes, buffets, decoración, mobiliario y artistas para bodas, XV años y eventos. Cotiza tu evento por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400;1,500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--burdeos:#59142D;--vino:#731A3B;--champana:#D9B68B;--marfil:#F2ECE4;--bronce:#A67A53;--bg:#F2ECE4;--surface:#FAF7F2;--text:#59142D;--muted:#7a5a45;--line:#e4d6c3;--head:rgba(242,236,228,.88);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#3c0d1f;--surface:#59142D;--text:#F2ECE4;--muted:#D9B68B;--line:#7a2c47;--head:rgba(60,13,31,.88)}}
+:root[data-theme="dark"]{--bg:#3c0d1f;--surface:#59142D;--text:#F2ECE4;--muted:#D9B68B;--line:#7a2c47;--head:rgba(60,13,31,.88)}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--bg);color:var(--text);font:300 16px/1.75 Poppins,system-ui,sans-serif}
+h1,h2,h3{font-family:Lora,Georgia,serif;font-style:italic;font-weight:400;line-height:1.2}
+a{color:inherit;text-decoration:none}.wrap{max-width:1120px;margin:auto;padding:0 24px}
+section{padding:clamp(64px,10vw,120px) 0}
+.eyebrow{font-weight:500;font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--bronce)}
+h2{font-size:clamp(30px,4.5vw,44px);margin:12px 0 16px}.lead{color:var(--muted);max-width:560px}
+.orn{display:flex;align-items:center;gap:10px;margin:22px 0;color:var(--champana)}.orn i{height:1px;width:56px;background:var(--champana)}.orn b{width:7px;height:7px;background:var(--champana);transform:rotate(45deg)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:999px;font:500 14px Poppins,sans-serif;letter-spacing:.04em;border:1px solid transparent;cursor:pointer;transition:transform .25s,background .25s,color .25s,box-shadow .25s}
+.btn-p{background:var(--vino);color:#F2ECE4}.btn-p:hover{background:var(--champana);color:#59142D;transform:translateY(-3px);box-shadow:0 12px 28px rgba(89,20,45,.25)}
+.btn-g{border-color:var(--bronce);color:var(--text)}.btn-g:hover{background:var(--bronce);color:#fff;transform:translateY(-3px)}
+.btn-c{background:var(--champana);color:#59142D}.btn-c:hover{background:#F2ECE4;transform:translateY(-3px)}
+header{position:sticky;top:0;z-index:20;background:var(--head);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{font:italic 500 28px Lora,serif;line-height:1}.brand small{display:block;font:400 9px Poppins;letter-spacing:.3em;color:var(--bronce);text-transform:uppercase;margin-top:4px}
+nav ul{display:flex;gap:30px;list-style:none;padding:0;align-items:center}
+nav a:not(.btn){font-size:14px;position:relative;padding:6px 0}nav a:not(.btn)::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--bronce);transition:width .3s}nav a:not(.btn):hover::after{width:100%}
+nav .btn{padding:10px 22px}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:var(--text)}
+.hero{padding-top:clamp(40px,6vw,80px)}.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(38px,6vw,68px);margin:14px 0 8px}.hero p{color:var(--muted);max-width:480px;margin-bottom:32px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.arch{border-radius:999px 999px 24px 24px;border:1px solid var(--champana);padding:14px;background:var(--surface);max-width:420px;margin-left:auto;width:100%}
+.arch img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:999px 999px 14px 14px;display:block}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:48px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:40px 30px;text-align:center;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(89,20,45,.14)}
+.ic{width:84px;height:84px;border-radius:50%;margin:0 auto 22px;display:grid;place-items:center;background:var(--vino);color:var(--champana);box-shadow:0 8px 20px rgba(89,20,45,.25)}
+.ic svg{width:38px;height:38px;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:26px;margin-bottom:10px}.card p{color:var(--muted);font-size:15px}
+.dark{background:var(--burdeos);color:#F2ECE4}.dark .lead,.dark .eyebrow{color:var(--champana)}
+.tags{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.tag{padding:12px 24px;border:1px solid var(--champana);border-radius:999px;font-size:14px;transition:background .25s,color .25s}.tag:hover{background:var(--champana);color:#59142D}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:48px;counter-reset:s}
+.step{border-top:1px solid var(--champana);padding-top:20px}.step::before{counter-increment:s;content:"0" counter(s);font:italic 30px Lora,serif;color:var(--bronce)}
+.step h3{font-size:20px;margin:6px 0}.step p{font-size:14px;color:var(--muted)}
+.final{text-align:center}.final .lead{margin:0 auto 32px}.final h2{font-size:clamp(32px,5vw,54px)}
+footer{background:#3c0d1f;color:#D9B68B;padding:40px 0 28px;font-size:13px;text-align:center}
+footer .brand{color:#F2ECE4;margin-bottom:12px}footer p{opacity:.85}
+.wa{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;width:58px;height:58px;border-radius:50%;background:var(--vino);color:var(--champana);display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.3);transition:transform .25s,background .25s}.wa:hover{transform:scale(1.1);background:var(--champana);color:var(--burdeos)}.wa svg{width:28px;height:28px;fill:currentColor}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto}.rv{opacity:1;transform:none}}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr;text-align:center}.hero p{margin-inline:auto}.cta{justify-content:center}.arch{margin:0 auto;max-width:340px;order:-1}.cards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.orn{justify-content:center}}
+@media (max-width:720px){.burger{display:block}nav ul{position:absolute;top:72px;left:0;right:0;flex-direction:column;gap:6px;padding:16px 24px 24px;background:var(--bg);border-bottom:1px solid var(--line);display:none}nav ul.open{display:flex}nav li{width:100%;text-align:center}nav a:not(.btn){display:block;padding:12px}.cards,.steps{grid-template-columns:1fr}}
+</style></head><body>
+<header><div class="wrap nav"><a href="#inicio" class="brand">Betty<small>Banquetes y Buffets</small></a>
+<button class="burger" aria-label="Abrir menú" aria-expanded="false"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+<nav><ul><li><a href="#nosotros">Nosotros</a></li><li><a href="#servicios">Servicios</a></li><li><a href="#eventos">Eventos</a></li><li><a href="#proceso">Cómo trabajamos</a></li><li><a class="btn btn-p" data-wa href="#">Cotiza tu evento</a></li></ul></nav></div></header>
+<main>
+<section class="hero" id="inicio"><div class="wrap"><div class="rv"><span class="eyebrow">Banquetes · Buffets · Eventos</span>
+<h1>Celebrar es un arte.</h1><div class="orn" style="justify-content:flex-start"><i></i><b></b><i></i></div>
+<p>Sabor, ambiente y emoción en una sola propuesta para tu boda, tus XV años y cada momento que importa.</p>
+<div class="cta"><a class="btn btn-p" data-wa href="#">Cotiza tu evento</a><a class="btn btn-g" href="#servicios">Ver servicios</a></div></div>
+<div class="arch rv"><img src="images/imagen_01.jpg" alt="Logo de Betty Banquetes y Buffets"></div></div></section>
+
+<section id="nosotros" style="padding-top:0"><div class="wrap" style="text-align:center"><div class="rv"><span class="eyebrow">Nuestra esencia</span>
+<h2>Una celebración bien cuidada se recuerda para siempre</h2>
+<p class="lead" style="margin:auto">Combinamos la calidez de lo hecho con cariño con la elegancia de un servicio especializado. Cada detalle, de la mesa a la pista, está pensado para que tú solo disfrutes.</p></div></div></section>
+
+<section id="servicios" style="background:var(--surface)"><div class="wrap"><div class="rv" style="text-align:center"><span class="eyebrow">Tres pilares de servicio</span><h2>Todo para tu evento, en un solo lugar</h2></div>
+<div class="cards">
+<article class="card rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 17h18M5 17a7 7 0 0 1 14 0M12 8V6M10.5 6h3"/><path d="M2 20h20"/></svg></div><h3>Sabor</h3><p>Banquetes y buffets con menús a la medida, preparados con ingredientes frescos y servidos con esmero.</p></article>
+<article class="card rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21v-8M12 13c-3 0-5-2-5-5 3 0 5 2 5 5zM12 13c3 0 5-2 5-5-3 0-5 2-5 5zM9 21h6"/><path d="M12 3v2M11 4h2"/></svg></div><h3>Ambiente</h3><p>Decoración, ambientación y mobiliario que transforman el espacio en el escenario soñado.</p></article>
+<article class="card rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.4L12 15l-1.8-4.6L5.5 9l4.7-1.4zM19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg></div><h3>Emoción</h3><p>Artistas y entretenimiento para llenar de música, risas y recuerdos cada momento de la fiesta.</p></article>
+</div></div></section>
+
+<section id="eventos" class="dark"><div class="wrap"><div class="rv"><span class="eyebrow">Lo que celebramos</span><h2>Tu fecha, tu historia</h2>
+<p class="lead">Acompañamos cada ocasión con la misma dedicación y atención al detalle.</p>
+<div class="tags"><span class="tag">Bodas</span><span class="tag">XV años</span><span class="tag">Grados</span><span class="tag">Cumpleaños</span><span class="tag">Bautizos</span><span class="tag">Celebraciones familiares</span><span class="tag">Eventos empresariales</span></div></div></div></section>
+
+<section id="proceso"><div class="wrap"><div class="rv" style="text-align:center"><span class="eyebrow">Cómo trabajamos</span><h2>Cuatro pasos, cero preocupaciones</h2></div>
+<div class="steps">
+<div class="step rv"><h3>Cuéntanos</h3><p>Escríbenos por WhatsApp con la fecha, el tipo de evento y el número de invitados.</p></div>
+<div class="step rv"><h3>Diseñamos</h3><p>Armamos una propuesta de menú, decoración y entretenimiento para ti.</p></div>
+<div class="step rv"><h3>Degusta</h3><p>Agenda tu visita y prueba el menú de tu evento.</p></div>
+<div class="step rv"><h3>Disfruta</h3><p>Nosotros nos encargamos de todo el día; tú, de celebrar.</p></div></div></div></section>
+
+<section class="dark final" id="cotiza"><div class="wrap rv"><span class="eyebrow">Hablemos</span><h2>Celebramos contigo los momentos que importan</h2>
+<p class="lead">Cuéntanos tu idea y recibe tu cotización personalizada directamente por WhatsApp.</p>
+<a class="btn btn-c" data-wa href="#">Cotiza tu evento</a></div></section>
+</main>
+<footer><div class="wrap"><div class="brand">Betty</div><p>Banquetes y Buffets · Elegancia · Calidez · Experiencia</p><p style="margin-top:10px">© 2026 Betty Banquetes y Buffets</p></div></footer>
+<a class="wa" data-wa href="#" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8s-.4-.1-.6.100-.6.8-.8 1-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.1 0-.3 0-.4l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800c.1.200 1.900 3 4.700 4.200 1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300c.2-.5.2-.9.200-1.300 0-.1-.2-.2-.4-.3z"/></svg></a>
+<script>
+var msg=encodeURIComponent("Hola Betty, quiero cotizar mi evento. ¿Me pueden ayudar?");
+document.querySelectorAll("[data-wa]").forEach(function(a){a.href="https://wa.me/573212515187?text="+msg;a.target="_blank";a.rel="noopener"});
+var b=document.querySelector(".burger"),u=document.querySelector("nav ul");
+b.onclick=function(){var o=u.classList.toggle("open");b.setAttribute("aria-expanded",o)};
+u.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){u.classList.remove("open")})});
+var els=document.querySelectorAll(".rv");
+if("IntersectionObserver" in window){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.15});els.forEach(function(e,i){e.style.transitionDelay=(i%3)*.1+"s";io.observe(e)})}else{els.forEach(function(e){e.classList.add("in")})}
+</script></body></html>
